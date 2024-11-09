@@ -6,6 +6,8 @@ env/
 ENV/
 virtualenv/
 pythonenv*
+back_venv/
+front_venv/
 
 # Dependencies
 node_modules/

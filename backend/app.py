@@ -45,6 +45,9 @@ def chat():
     # Return JSON response
     return jsonify(chat_entry)
 
+
+
+
 def process_message(message):
     # Check for Python keywords in the message
     for concept, explanation in PYTHON_CONCEPTS.items():
@@ -58,8 +61,10 @@ def process_message(message):
         return "I can help you learn about Python concepts! Try asking about: loops, lists, dictionaries, functions, or classes."
     elif "example" in message:
         return provide_random_example()
+    
     else:
         return f"You said: {message}. Try asking about Python concepts or type 'help' for guidance!"
+
 
 @app.route('/history')
 def get_history():
