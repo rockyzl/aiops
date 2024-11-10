@@ -82,18 +82,18 @@ def main():
         st.write("---")
         with st.expander("Dictionary Operations", expanded=True):
             st.code("""     
-person = {'name': 'Alice', 'age': 25}
-person['city'] = 'Beijing'  # Add new key
-del person['age']          # Remove key
+            person = {'name': 'Alice', 'age': 25}
+            person['city'] = 'Beijing'  # Add new key
+            del person['age']          # Remove key
             """)
         
         with st.expander("Function Example", expanded=True):
             st.code("""
-def greet(name):
-    return f"Hello, {name}!"
+            def greet(name):
+                return f"Hello, {name}!"
 
-# Call the function
-message = greet("World")
+                # Call the function
+                message = greet("World")
             """)
 
         # Recent History
