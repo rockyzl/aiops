@@ -21,7 +21,7 @@ if 'messages' not in st.session_state:
 def send_message(message):
     """发送消息并获取响应"""
     try:
-        response = requests.get(f"http://localhost:5000/chat", params={"message": message})
+        response = requests.get(f"http://backend:5000/chat", params={"message": message})
         if response.status_code == 200:
             return response.json()
         return None
@@ -30,7 +30,7 @@ def send_message(message):
         return None
 
 def main():
-    st.title("Python Learning Assistant 🐍")
+    st.title("Python Learning Assistant 🐍🐍🐍🐍🐍")
     
     # 创建两列布局
     left, right = st.columns(2)
